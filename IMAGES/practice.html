@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Practice - ODA Study Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Practice Activities</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Coding Levels</h2>
+    <div class="card" onclick="loadQuiz('level1')">Level 1: Beginner Coding</div>
+    <div class="card" onclick="loadQuiz('level2')">Level 2: Intermediate Coding</div>
+    <div class="card" onclick="loadQuiz('level3')">Level 3: Advanced Coding</div>
+    <div class="card" onclick="loadQuiz('level4')">Level 4: Expert Challenges</div>
+
+  </section>
+  <section id="quizSection">
+    <h2>Quiz</h2>
+    <form id="quizForm"></form>
+    <p id="quizResult"></p>
+  </section>
+</body>
+</html>
+
