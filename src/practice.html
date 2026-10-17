@@ -17,17 +17,18 @@
   </header>
 
   <section>
-    <h2>Coding Levels</h2>
-    <div class="card" onclick="loadQuiz('level1')">Level 1: Beginner Coding</div>
-    <div class="card" onclick="loadQuiz('level2')">Level 2: Intermediate Coding</div>
-    <div class="card" onclick="loadQuiz('level3')">Level 3: Advanced Coding</div>
-    <div class="card" onclick="loadQuiz('level4')">Level 4: Expert Challenges</div>
-
+    <h2>Skill Testing Levels</h2>
+    <div class="card" onclick="loadQuiz('level1')">Level 1: Beginner</div>
+    <div class="card" onclick="loadQuiz('level2')" id="level2" style="pointer-events:none;opacity:0.5;">Level 2: Intermediate</div>
+    <div class="card" onclick="loadQuiz('level3')" id="level3" style="pointer-events:none;opacity:0.5;">Level 3: Advanced</div>
+    <div class="card" onclick="loadQuiz('level4')" id="level4" style="pointer-events:none;opacity:0.5;">Level 4: Expert</div>
   </section>
+
   <section id="quizSection">
     <h2>Quiz</h2>
     <form id="quizForm"></form>
     <p id="quizResult"></p>
+    <div id="quizCorrections"></div>
   </section>
 </body>
 </html>
